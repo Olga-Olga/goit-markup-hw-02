@@ -1,3 +1,11 @@
+/* Опис змінних по всьому документ. 
+Якщо сворити в секції, то тільки в цієї секції буде працювати */
+:root {
+        /* NAVY BLUE */
+     --color-navyblue: #2E2F42
+}
+
+
 body {
     font-family: 'Raleway';
 }
@@ -15,39 +23,188 @@ body {
     src: url(../fonts/Roboto/Roboto-Bold.ttf)
 } */
 
-.header-link-WebStudio {
+/* !Header  */
+ .logo {
     
     font-weight: 800;
     font-size: 18px;
     line-height: 1.16em;
     letter-spacing: 0.03em;
+    color: var(--color-navyblue);
+    text-transform: uppercase;
+}
+
+ .logo span {
+    /* IRIS */
     color: #4D5AE5;
 }
 
-.header-link2 {
-    font-weight: 800;
-    font-size: 18px;
-    line-height: (24px/16px)em;
-    /* identical to box height, or 117% */
-    letter-spacing: 0.03em;
+
+.header-navigation-link{
+        font-weight: 500;
+        font-size: 16px;
+        line-height: calc(24/16)em;
+        /* identical to box height, or 150% */
+        letter-spacing: 0.02em;
+        /* NAVY BLUE */    
+        color: var(--color-navyblue);
 }
 
-.header-adress-list { 
+.header-contact-link {
+font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: (24px/16px)em;
+    line-height: 24px;
+    /* identical to box height, or 150% */
     letter-spacing: 0.02em;
+    /* SLATE */
     color: #434455;
-
 }
 
+/* !Section 1 */
+.top-section {
+    background: #2E2F42; ;
+}
 
+.main-title {
+    font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 60px;
+        /* or 107% */
+        text-align: center;
+        letter-spacing: 0.02em;
+        /* WHITE */
+        color: #FFFFFF;
+}
 
 button {
     font-family: 'Roboto';
+       font-weight: 500;
+        font-size: 16px;
+        line-height: (24px/16px);
+        /* identical to box height, or 150% */
+    
+        /* display: flex;
+        align-items: center; */
+        letter-spacing: 0.04em;
+         /* WHITE */
+    
+        color: #FFFFFF;
+        background: #4D5AE5;
+}
+
+/* ! SEction 2 */
+ .fearutes-item-title {
+    font-family: 'Roboto';
     font-weight: 500;
+    font-size: 20px;
+    line-height: (24px/20px);
+    /* identical to box height, or 120% */
+    letter-spacing: 0.02em;
+    /* NAVY BLUE */
+    color: var(--color-navyblue);
+ }
+
+ .fearutes-item-description {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
     font-size: 16px;
-    line-height: 24px;
-    cursor: default;
+    line-height: (24px/16px);
+    /* or 150% */
+    letter-spacing: 0.02em;
+    /* SLATE */
+    color: #434455;
+ }
+
+ /*! Section 3 What are we doing  */
+
+
+ .wedoing-title{
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 36px;
+line-height: 40px;
+/* identical to box height, or 111% */
+
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+
+/* NAVY BLUE */
+
+color: #2E2F42;
+
+ }
+
+
+/* ! Section 4 */
+.hero-section-title {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: calc(40 / 36)em;
+    /* text-align: center; */
+    letter-spacing: 0.02em;
+    /* text-transform: capitalize; */
+    /* NAVY BLUE */
+    color: #2E2F42;
+   /* color: var(--title-color) */
+
+}
+
+.hero-list {}
+.hero-item {}
+.hero-link {}
+
+.hero-name {
+        font-family: 'Roboto', sans-serif;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: calc(24/20)em;
+        /* identical to box height, or 120% */
+        text-align: center;
+        letter-spacing: 0.02em;
+        /* NAVY BLUE */
+        color: #2E2F42;
+}
+
+.hero-title {
+        font-family: 'Roboto';
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px/16px;
+        /* identical to box height, or 150% */
+        text-align: center;
+        letter-spacing: 0.02em;
+        /* SLATE */
+        color: #434455;
+}
+
+/* ! Footer */
+.footer {
+    background-color: var(--color-navyblue) ;
+}
+
+/* Logo and logospan in the heared */
+
+.footer .logo {
+    /* CLOUD */
+    color: #F4F4FD;
+}
+
+.footer-description {
+    font-family: 'Roboto';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 24px;
+/* or 150% */
+letter-spacing: 0.02em;
+/* CLOUD */
+color: #F4F4FD
 }
