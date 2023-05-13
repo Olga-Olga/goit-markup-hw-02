@@ -1,17 +1,27 @@
 /* Опис змінних по всьому документ. Якщо сворити в секції, то тільки в цієї секції буде працювати */
 :root {
         /* NAVY BLUE */
-     --color-navyblue: #2E2F42
+     --color-navyblue: #2E2F42;
+
+    /* IRIS */
+     --color-iris: #4d5ae5;
 }
 
 
 body {
-    font-family: 'Raleway';
+    font-family: 'Roboto', sans-serif;
+    /* SLATE */
+    color: #434455;
+    background-color: #FFFFFF
 }
 
 .list {
     list-style: none;
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
+
 
 .link {
     text-decoration: none;
@@ -23,34 +33,34 @@ body {
 } */
 
 /* !Header  */
+
  .logo {
-    
+    font-family: "Raleway", sans-serif;
     font-weight: 800;
     font-size: 18px;
-    line-height: 1.16em;
+    line-height: 1.17em;
     letter-spacing: 0.03em;
-    color: var(--color-navyblue);
     text-transform: uppercase;
-}
-
- .logo span {
     /* IRIS */
     color: #4D5AE5;
+}
+
+.logo-studio-top {
+  color: var(--color-navyblue);    
 }
 
 
 .header-navigation-link{
         font-weight: 500;
         font-size: 16px;
-        line-height: calc(24/16)em;
+        line-height: 1.17em;
         /* identical to box height, or 150% */
-        letter-spacing: 0.02em;
+        letter-spacing: 0.03em;
         /* NAVY BLUE */    
         color: var(--color-navyblue);
 }
 
 .header-contact-link {
-font-family: 'Roboto';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
@@ -67,11 +77,9 @@ font-family: 'Roboto';
 }
 
 .main-title {
-    font-family: 'Roboto';
-        font-style: normal;
         font-weight: 700;
         font-size: 56px;
-        line-height: 60px;
+        line-height: 1.07;
         /* or 107% */
         text-align: center;
         letter-spacing: 0.02em;
@@ -80,27 +88,31 @@ font-family: 'Roboto';
 }
 
 .main-btn {
-    font-family: 'Roboto';
-       font-weight: 500;
-        font-size: 16px;
-        line-height: (24px/16px);
-        /* identical to box height, or 150% */
-    
-        /* display: flex;
-        align-items: center; */
-        letter-spacing: 0.04em;
-         /* WHITE */
-    
-        color: #FFFFFF;
-        background: #4D5AE5;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    /* display: flex; */
+    align-items: center;
+    letter-spacing: 0.04em;
+    /* WHITE */
+    color: #FFFFFF;
+    background: #4D5AE5;
+    cursor: pointer;
 }
+.main-btn:hover {
+    background-color: #404BBF;
+}
+
+.main-btn:focus {
+    background-color: #404BBF;
+}
+
 
 /* ! SEction 2 */
  .fearutes-item-title {
-    font-family: 'Roboto';
     font-weight: 500;
     font-size: 20px;
-    line-height: (24px/20px);
+    line-height: 1.2;
     /* identical to box height, or 120% */
     letter-spacing: 0.02em;
     /* NAVY BLUE */
@@ -108,11 +120,9 @@ font-family: 'Roboto';
  }
 
  .fearutes-item-description {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: (24px/16px);
+    line-height: 1.5;
     /* or 150% */
     letter-spacing: 0.02em;
     /* SLATE */
@@ -123,11 +133,9 @@ font-family: 'Roboto';
 
 
  .wedoing-title{
-    font-family: 'Roboto';
-font-style: normal;
 font-weight: 700;
 font-size: 36px;
-line-height: 40px;
+line-height: 1.11;
 /* identical to box height, or 111% */
 
 text-align: center;
@@ -141,30 +149,35 @@ color: #2E2F42;
  }
 
 
-/* ! Section 4 */
+/* ! Section 4 TEAM HERO*/
+.hero{
+    /* CLOUD */
+   background: #F4F4FD;
+}
+
 .hero-section-title {
-    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 36px;
-    line-height: calc(40 / 36)em;
-    /* text-align: center; */
+    line-height: 1.11;
+     text-align: center;
     letter-spacing: 0.02em;
-    /* text-transform: capitalize; */
+     text-transform: capitalize;
     /* NAVY BLUE */
     color: #2E2F42;
    /* color: var(--title-color) */
-
+   text-align: center
 }
 
 .hero-list {}
-.hero-item {}
+.hero-item {
+    background-color: #FFFFFF
+}
 .hero-link {}
 
 .hero-name {
-        font-family: 'Roboto', sans-serif;
         font-weight: 500;
         font-size: 20px;
-        line-height: calc(24/20)em;
+        line-height: 1.2;
         /* identical to box height, or 120% */
         text-align: center;
         letter-spacing: 0.02em;
@@ -173,10 +186,9 @@ color: #2E2F42;
 }
 
 .hero-title {
-        font-family: 'Roboto';
         font-weight: 400;
         font-size: 16px;
-        line-height: 24px/16px;
+        line-height: 1.5;
         /* identical to box height, or 150% */
         text-align: center;
         letter-spacing: 0.02em;
@@ -190,17 +202,16 @@ color: #2E2F42;
 }
 
 /* Logo and logospan in the heared */
-.footer .logo {
+.logo-studio-bottom {
     /* CLOUD */
     color: #F4F4FD;
 }
 
 .footer-description {
-    font-family: 'Roboto';
 font-style: normal;
 font-weight: 400;
 font-size: 16px;
-line-height: 24px;
+line-height: 1.17;
 /* or 150% */
 letter-spacing: 0.02em;
 /* CLOUD */
@@ -212,7 +223,6 @@ color: #F4F4FD
 }
 
 .btn {
-    font-family: 'Roboto';
 font-style: normal;
 font-weight: 500;
 font-size: 16px;
@@ -239,7 +249,6 @@ border-radius: 4px;
 }
 
 .btn-active {
-    font-family: 'Roboto';
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
@@ -263,8 +272,6 @@ border-radius: 4px;
 .projects-list-item {
 }
 .project-title {
-    font-family: 'Roboto';
-    font-style: normal;
     font-weight: 500;
     font-size: 20px;
     line-height: 24px;
@@ -274,13 +281,11 @@ border-radius: 4px;
     color: #2E2F42;  
 }
 .project-description {
-    font-family: 'Roboto';
-font-style: normal;
-font-weight: 400;
-font-size: 16px;
-line-height: 24px;
-/* identical to box height, or 150% */
-letter-spacing: 0.02em;
-/* SLATE */
-color: #434455;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    /* identical to box height, or 150% */
+    letter-spacing: 0.02em;
+    /* SLATE */
+    color: #434455;
 }
