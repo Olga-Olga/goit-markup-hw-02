@@ -65,9 +65,14 @@ body {
     color: var(--color-navyblue);
 }
 
-.header-navigation-link:hover, .header-navigation-link:focus {
+.header-navigation-link:hover {
     color: var(--color-ocean);
-    font-style: normal 
+    font-style: normal; 
+}
+
+.header-navigation-link:focus {
+    color: var(--color-ocean);
+    font-style: normal; 
 }
 
 
