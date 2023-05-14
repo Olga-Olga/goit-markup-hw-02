@@ -54,7 +54,7 @@ body {
 }
 
 
-.header-navigation-link{
+.header-navigation-link {
     font-style: normal;     
     font-weight: 500;
     font-size: 16px;
@@ -72,7 +72,7 @@ body {
 
 .header-navigation-link:focus {
     color: var(--color-ocean);
-    font-style: normal; 
+    font-style: normal;  
 }
 
 
@@ -85,9 +85,14 @@ body {
     letter-spacing: 0.02em;
     /* SLATE */
     color: #434455;
+    font-style: normal;
 }
 
 .header-contact-link:hover {
+    color: var(--color-ocean);
+}
+
+.header-contact-link:focus {
     color: var(--color-ocean);
 }
 /* !Section 1 */
