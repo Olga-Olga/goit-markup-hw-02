@@ -76,6 +76,9 @@ body {
     font-style: normal;  
 }
 
+.header-adress, header-adress-list {
+    font-style: normal;
+}
 
 .header-contact-link {
     font-style: normal;
@@ -86,7 +89,6 @@ body {
     letter-spacing: 0.02em;
     /* SLATE */
     color: #434455;
-    font-style: normal;
 }
 
 .header-contact-link:hover {
